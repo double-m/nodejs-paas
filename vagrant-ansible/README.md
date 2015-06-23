@@ -1,13 +1,25 @@
-## Provision a Node.js service using Vagrant on VirtualBox and Ansible
+## Provisioning of a Node.js service using Vagrant and Ansible
 
-### Pre-requisites
+### 0. Pre-requisites
 
 `vboxheadless`, `vagrant`, `ansible-playbook`
 
-### Start the enviroment
+```
+$ sudo apt-get install virtualbox vagrant ansible
+```
+
+### 1. Start the enviroment
 
 ```
+$ git clone git@github.com:double-m/nodejs-paas.git
+$ cd nodejs-paas/vagrant-ansible
 $ vagrant up
+```
+
+### 2. Provision the PaaS
+
+```
+$ vagrant provision
 ```
 
 ### Useful commands
@@ -15,7 +27,7 @@ $ vagrant up
 Connect to the provisioned box:
 
 ```
-$ vagrant ssh # `ssh -p 2222 vagrant@127.0.0.1` with password "vagrant" in Vagrant 1.6
+$ vagrant ssh # or `ssh -p 2222 vagrant@127.0.0.1` with password "vagrant" in Vagrant 1.6
 ```
 
 Check the Vagrant and VirtualBox files that aren't under version control:

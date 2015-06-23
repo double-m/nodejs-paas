@@ -1,4 +1,4 @@
-# Provision a Node.js service
+# Provisioning of a Node.js service
 
 ## Implementations
 
