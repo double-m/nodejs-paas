@@ -1,0 +1,10 @@
+# NodeJS on Ubuntu server
+
+---
+
+- name: Basic setup for a 64bit Ubuntu Server
+  hosts: nodejs-ubuntu
+
+- name: Specific setup for the NodeJS PaaS
+  hosts: nodejs-ubuntu
+
