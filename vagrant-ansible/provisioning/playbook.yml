@@ -4,6 +4,9 @@
 
 - name: Basic setup for a 64bit Ubuntu Server
   hosts: nodejs-ubuntu
+  sudo: yes
+  roles:
+    - basic-setup
 
 - name: Specific setup for the NodeJS PaaS
   hosts: nodejs-ubuntu
