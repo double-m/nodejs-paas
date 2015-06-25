@@ -14,4 +14,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     ansible.limit = "nodejs-ubuntu"
   end
 
+  config.vm.network "forwarded_port", guest: 3000, host: 3000
+
 end
