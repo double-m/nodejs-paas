@@ -12,7 +12,7 @@
   hosts: nodejs-ubuntu
   sudo: yes
   vars_files:
-    - roles/nodejs-paas/defaults/git_variables.yml
+    - roles/nodejs-paas/defaults/variables.yml
   roles:
     - nodejs-paas
 
